@@ -1,10 +1,15 @@
 
+@use "variable" as v;
+@forward "reset";
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+
 
 
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: map-get($map: $color, $key: "l-gray" );
+    background-color: map-get(v.$color, $key: "l-gray" );
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +17,7 @@ body {
 }
 
 .qr_component{
-    background-color: map-get($map: $color, $key: "white" ) ;
+    background-color: map-get(v.$color, $key: "white" ) ;
     width: 320px;
     display: flex;
     flex-direction: column;
@@ -35,14 +40,14 @@ body {
      
              &__title{
                  font-size: 1.4rem;
-                 font-weight: map-get($ft-w,"f7" );
-                 color: map-get($color, "blue" );
+                 font-weight: map-get(v.$ft-w,"f7" );
+                 color: map-get(v.$color, "blue" );
              }
      
              &__content{
                  font-size: 15px;
-                 font-weight: map-get($ft-w,"f4");
-                 color: map-get($color , "b-gray");
+                 font-weight: map-get(v.$ft-w,"f4");
+                 color: map-get(v.$color , "b-gray");
              }
         }
 
