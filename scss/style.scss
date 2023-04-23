@@ -24,6 +24,7 @@ body {
     padding: 16px;
     border-radius: 20px;
     text-align: center;
+     
 
    
     .qr-code {
@@ -42,12 +43,14 @@ body {
                  font-size: 1.4rem;
                  font-weight: map-get(v.$ft-w,"f7" );
                  color: map-get(v.$color, "blue" );
+                 line-height: 1.6rem;
              }
      
              &__content{
                  font-size: 15px;
                  font-weight: map-get(v.$ft-w,"f4");
                  color: map-get(v.$color , "b-gray");
+                 line-height: 1.1rem;
              }
         }
 
